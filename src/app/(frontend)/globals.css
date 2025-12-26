@@ -11,6 +11,7 @@
   h6 {
     font-size: unset;
     font-weight: unset;
+    font-family: var(--font-geist-mono);
   }
 
   :root {
@@ -90,6 +91,7 @@
   }
   body {
     @apply bg-background text-foreground min-h-[100vh] flex flex-col;
+    font-family: var(--font-outfit-sans);
   }
 }
 
