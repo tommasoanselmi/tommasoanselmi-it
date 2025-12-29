@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { cn } from '@/utilities/ui'
-import { Geist_Mono, Outfit } from 'next/font/google'
+import { Electrolize, Outfit } from 'next/font/google'
 import React from 'react'
 
 import { AdminBar } from '@/components/AdminBar'
@@ -21,11 +21,11 @@ const sans = Outfit({
   display: 'swap',
 })
 
-const mono = Geist_Mono({
+const mono = Electrolize({
   subsets: ['latin'],
-  variable: '--font-geist-mono',
+  variable: '--font-electrolize-mono',
   display: 'swap',
-  weight: '600',
+  weight: '400',
 })
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

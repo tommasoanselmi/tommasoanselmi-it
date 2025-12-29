@@ -786,7 +786,7 @@ export interface Form {
 export interface Redirect {
   id: number;
   /**
-   * You will need to rebuild the website when changing this field.
+   * Verrà effettuata una rebuild del sito quando il campo verrà modificato. You will need to rebuild the website when changing this field.
    */
   from: string;
   to?: {
