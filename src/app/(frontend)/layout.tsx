@@ -32,7 +32,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const { isEnabled } = await draftMode()
 
   return (
-    <html className={cn(sans.variable, mono.variable)} lang="it" suppressHydrationWarning>
+    <html
+      className={cn(sans.variable, mono.variable, `antialiased dark`)}
+      lang="it"
+      suppressHydrationWarning
+    >
       <head>
         <InitTheme />
         <link href="/favicon.ico" rel="icon" sizes="32x32" />
