@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { cn } from '@/utilities/ui'
-import { Electrolize, Outfit } from 'next/font/google'
+import { Michroma, Outfit, JetBrains_Mono } from 'next/font/google'
 import React from 'react'
 
 import { AdminBar } from '@/components/AdminBar'
@@ -17,15 +17,22 @@ import { getServerSideURL } from '@/utilities/getURL'
 
 const sans = Outfit({
   subsets: ['latin'],
-  variable: '--font-outfit-sans',
+  variable: '--font-body-sans',
   display: 'swap',
 })
 
-const mono = Electrolize({
+const mono = Michroma({
   subsets: ['latin'],
-  variable: '--font-electrolize-mono',
+  variable: '--font-heading-mono',
   display: 'swap',
   weight: '400',
+})
+
+const code = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-code-mono',
+  display: 'swap',
+  weight: ['400'],
 })
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
@@ -33,7 +40,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html
-      className={cn(sans.variable, mono.variable, `antialiased dark`)}
+      className={cn(sans.variable, mono.variable, code.variable, `antialiased dark`)}
       lang="it"
       suppressHydrationWarning
     >

@@ -12,9 +12,9 @@ export const Code: React.FC<Props> = ({ code, language = '' }) => {
   if (!code) return null
 
   return (
-    <Highlight code={code} language={language} theme={themes.vsDark}>
+    <Highlight code={code} language={language} theme={themes.oneDark}>
       {({ getLineProps, getTokenProps, tokens }) => (
-        <pre className="bg-black p-4 border text-xs border-border overflow-x-auto">
+        <pre className="bg-black p-4 border text-xs border-border font-code overflow-x-auto">
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ className: 'table-row', line })}>
               <span className="table-cell select-none text-right text-white/25">{i + 1}</span>
