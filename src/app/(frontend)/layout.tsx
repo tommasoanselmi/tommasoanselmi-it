@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { cn } from '@/utilities/ui'
-import { Geist_Mono, Outfit, JetBrains_Mono } from 'next/font/google'
+import { Geist_Mono, Outfit, JetBrains_Mono, Doto } from 'next/font/google'
 import React from 'react'
 
 import { AdminBar } from '@/components/AdminBar'
@@ -35,12 +35,19 @@ const code = JetBrains_Mono({
   weight: ['400'],
 })
 
+const logo = Doto({
+  subsets: ['latin'],
+  variable: '--font-logo',
+  display: 'swap',
+  weight: '900',
+})
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
 
   return (
     <html
-      className={cn(sans.variable, mono.variable, code.variable, `antialiased dark`)}
+      className={cn(sans.variable, mono.variable, code.variable, logo.variable, `antialiased dark`)}
       lang="it"
       suppressHydrationWarning
     >
@@ -71,6 +78,6 @@ export const metadata: Metadata = {
   openGraph: mergeOpenGraph(),
   twitter: {
     card: 'summary_large_image',
-    creator: '@payloadcms',
+    creator: 'Tommaso Anselmi',
   },
 }
