@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { cn } from '@/utilities/ui'
-import { Michroma, Outfit, JetBrains_Mono } from 'next/font/google'
+import { Geist_Mono, Outfit, JetBrains_Mono } from 'next/font/google'
 import React from 'react'
 
 import { AdminBar } from '@/components/AdminBar'
@@ -21,11 +21,11 @@ const sans = Outfit({
   display: 'swap',
 })
 
-const mono = Michroma({
+const mono = Geist_Mono({
   subsets: ['latin'],
   variable: '--font-heading-mono',
   display: 'swap',
-  weight: '400',
+  weight: '500',
 })
 
 const code = JetBrains_Mono({
