@@ -16,7 +16,7 @@ const columnFields: Field[] = [
     defaultValue: 'oneThird',
     options: [
       {
-        label: 'Un Terzi',
+        label: 'Un Terzo',
         value: 'oneThird',
       },
       {
