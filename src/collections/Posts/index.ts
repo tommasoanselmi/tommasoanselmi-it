@@ -69,6 +69,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'title',
       type: 'text',
+      label: 'Titolo',
       required: true,
     },
     {
@@ -79,6 +80,7 @@ export const Posts: CollectionConfig<'posts'> = {
             {
               name: 'heroImage',
               type: 'upload',
+              label: 'Immagine Hero',
               relationTo: 'media',
             },
             {
@@ -100,13 +102,14 @@ export const Posts: CollectionConfig<'posts'> = {
               required: true,
             },
           ],
-          label: 'Content',
+          label: 'Contenuto',
         },
         {
           fields: [
             {
               name: 'relatedPosts',
               type: 'relationship',
+              label: 'Post consigliati',
               admin: {
                 position: 'sidebar',
               },
@@ -123,6 +126,7 @@ export const Posts: CollectionConfig<'posts'> = {
             {
               name: 'categories',
               type: 'relationship',
+              label: 'Categorie',
               admin: {
                 position: 'sidebar',
               },
@@ -164,6 +168,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'publishedAt',
       type: 'date',
+      label: 'Data di pubblicazione',
       admin: {
         date: {
           pickerAppearance: 'dayAndTime',
@@ -184,6 +189,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'authors',
       type: 'relationship',
+      label: 'Autori',
       admin: {
         position: 'sidebar',
       },

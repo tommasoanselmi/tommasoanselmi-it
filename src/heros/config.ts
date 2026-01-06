@@ -20,19 +20,19 @@ export const hero: Field = {
       label: 'Type',
       options: [
         {
-          label: 'None',
+          label: 'Nessuno',
           value: 'none',
         },
         {
-          label: 'High Impact',
+          label: 'Grande',
           value: 'highImpact',
         },
         {
-          label: 'Medium Impact',
+          label: 'Medio',
           value: 'mediumImpact',
         },
         {
-          label: 'Low Impact',
+          label: 'Piccolo',
           value: 'lowImpact',
         },
       ],

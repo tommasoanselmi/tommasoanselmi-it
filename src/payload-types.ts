@@ -191,7 +191,7 @@ export interface Page {
             url?: string | null;
             label: string;
             /**
-             * Choose how the link should be rendered.
+             * Scegli l'aspetto del link.
              */
             appearance?: ('default' | 'outline') | null;
           };
@@ -474,7 +474,7 @@ export interface CallToActionBlock {
           url?: string | null;
           label: string;
           /**
-           * Choose how the link should be rendered.
+           * Scegli l'aspetto del link.
            */
           appearance?: ('default' | 'outline') | null;
         };
@@ -524,7 +524,7 @@ export interface ContentBlock {
           url?: string | null;
           label: string;
           /**
-           * Choose how the link should be rendered.
+           * Scegli l'aspetto del link.
            */
           appearance?: ('default' | 'outline') | null;
         };

@@ -32,6 +32,7 @@ export const Media: CollectionConfig = {
     {
       name: 'caption',
       type: 'richText',
+      label: 'Didascalia',
       editor: lexicalEditor({
         features: ({ rootFeatures }) => {
           return [...rootFeatures, FixedToolbarFeature(), InlineToolbarFeature()]

@@ -46,10 +46,11 @@ export const PageRange: React.FC<{
 
   return (
     <div className={[className, 'font-semibold'].filter(Boolean).join(' ')}>
-      {(typeof totalDocs === 'undefined' || totalDocs === 0) && 'Search produced no results.'}
+      {(typeof totalDocs === 'undefined' || totalDocs === 0) &&
+        'La ricerca non ha prodotto risultati.'}
       {typeof totalDocs !== 'undefined' &&
         totalDocs > 0 &&
-        `Showing ${indexStart}${indexStart > 0 ? ` - ${indexEnd}` : ''} of ${totalDocs} ${
+        `${indexStart}${indexStart > 0 ? ` - ${indexEnd}` : ''} di ${totalDocs} ${
           totalDocs > 1 ? plural : singular
         }`}
     </div>

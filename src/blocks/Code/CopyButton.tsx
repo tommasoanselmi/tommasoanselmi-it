@@ -7,10 +7,10 @@ export function CopyButton({ code }: { code: string }) {
   const [text, setText] = useState('Copy')
 
   function updateCopyStatus() {
-    if (text === 'Copy') {
-      setText(() => 'Copied!')
+    if (text === 'Copia') {
+      setText(() => 'Copiato!')
       setTimeout(() => {
-        setText(() => 'Copy')
+        setText(() => 'Copia')
       }, 1000)
     }
   }
