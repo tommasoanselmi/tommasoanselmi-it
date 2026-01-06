@@ -25,6 +25,40 @@ export const Footer: GlobalConfig = {
         },
       },
     },
+    {
+      type: 'group',
+      name: 'socialLinks',
+      label: 'Link Social Media',
+      admin: {
+        description: 'Link opzionali ai social media',
+      },
+      fields: [
+        {
+          name: 'instagram',
+          type: 'text',
+          label: 'Instagram URL',
+          admin: {
+            placeholder: 'https://instagram.com/tuoprofilo',
+          },
+        },
+        {
+          name: 'youtube',
+          type: 'text',
+          label: 'YouTube URL',
+          admin: {
+            placeholder: 'https://youtube.com/@tuocanale',
+          },
+        },
+        {
+          name: 'github',
+          type: 'text',
+          label: 'GitHub URL',
+          admin: {
+            placeholder: 'https://github.com/tuonome',
+          },
+        },
+      ],
+    },
   ],
   hooks: {
     afterChange: [revalidateFooter],

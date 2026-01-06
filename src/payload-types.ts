@@ -1684,6 +1684,14 @@ export interface Footer {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Link opzionali ai social media
+   */
+  socialLinks?: {
+    instagram?: string | null;
+    youtube?: string | null;
+    github?: string | null;
+  };
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -1728,6 +1736,13 @@ export interface FooterSelect<T extends boolean = true> {
               label?: T;
             };
         id?: T;
+      };
+  socialLinks?:
+    | T
+    | {
+        instagram?: T;
+        youtube?: T;
+        github?: T;
       };
   updatedAt?: T;
   createdAt?: T;
