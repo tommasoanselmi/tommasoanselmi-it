@@ -121,6 +121,9 @@ export const Pages: CollectionConfig<'pages'> = {
       label: 'Data di pubblicazione',
       admin: {
         position: 'sidebar',
+        date: {
+          displayFormat: 'dd/MM/yyyy HH:mm',
+        },
       },
     },
     slugField(),

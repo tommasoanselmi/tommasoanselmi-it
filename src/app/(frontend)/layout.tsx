@@ -25,7 +25,6 @@ const mono = Geist_Mono({
   subsets: ['latin'],
   variable: '--font-heading-mono',
   display: 'swap',
-  weight: '500',
 })
 
 const code = JetBrains_Mono({
