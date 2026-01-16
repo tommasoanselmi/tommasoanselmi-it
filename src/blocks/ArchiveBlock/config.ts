@@ -84,7 +84,7 @@ export const Archive: Block = {
       },
       hasMany: true,
       label: 'Selezione',
-      relationTo: ['posts', 'pages'],
+      relationTo: ['posts'],
     },
   ],
   labels: {
